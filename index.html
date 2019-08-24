@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="Script.js"></script>
+        <style>
+            div{
+                height: 100px;
+                width: 400px;                
+                margin: 5px;              
+            }
+
+			.hot{
+				background-color: aqua;
+			}
+
+			.cold{
+				background-color: red;
+			}
+		</style>	
+    </head>
+    <body>
+		<div>
+			<input type="button" value="Activer le pattern" onClick="operationsPattern.activerPattern()" id="activateButton"/> <br/><br/>   
+
+			<input type="button" value="Désactiver le pattern" onClick="operationsPattern.desactiverPattern()" id="desactivateButton"/>
+		</div>
+
+		<br/><br/>
+		<div style="margin-left: 40%; background-color: yellow; " >
+			Enter new temperature : <input type="text" id="observable" placeholder="Enter only a positive or negative number"/> °C
+		</div>
+		<br/><br/>
+		<div style= "border: solid 1px black; float: left" id="observer1">
+			
+		</div>
+		
+		<div style= "border: solid 1px blue; float: right" id="observer2">
+			
+		</div>
+		
+		<div style= "border: solid 1px green; clear: both; margin-left: 40%" id="observer3">
+			
+		</div>		
+	</body>
+</html>
